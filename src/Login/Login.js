@@ -41,7 +41,7 @@ var checked=this.state.checked;
                 {/* <View style={{flex:1,flexDirection:'row',alignItems:'center'}}> */}
                         <View style={{flex:0.5,flexDirection:'row',justifyContent:'center'}}>
                               <CheckBox style={{borderRadius:10}} checked={this.state.checked} onPress={()=>this.setState({checked:!checked})} />
-                              <Text style={{left:wp('3%')}}>Remember Me?</Text>
+                              <Text style={{left:wp('5%')}}>Remember Me?</Text>
                         </View>
                         <View style={{flex:0.5,alignItems:'center'}}>
                           <TouchableOpacity activeOpacity = { .5 } >
