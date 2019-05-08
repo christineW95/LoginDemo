@@ -1,4 +1,4 @@
-#Sun May 05 13:26:20 EET 2019
-base.0=E\:\\codelab\\Bravo\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed May 08 10:24:35 EET 2019
+base.0=E\:\\codelab\\Bravo\\LoginDemo\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

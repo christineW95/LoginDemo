@@ -4,7 +4,7 @@ import CustomIcon from '../../CustomIcon';
 export default  SocialIcon=props=>{
     return(
         <View>
-            <TouchableOpacity onPress={()=>{
+            <TouchableOpacity style={props.style} onPress={()=>{
             Linking.canOpenURL(props.url)
             .then((supported) => {
               if (!supported) {
@@ -14,8 +14,8 @@ export default  SocialIcon=props=>{
               }
             })
             .catch((err) => console.error('An error occurred', err))}}>
-                <View style={[props.style]}>
-                    <CustomIcon type='material-community' name={props.name} color={props.color} size={27}  />
+                <View >
+                    <CustomIcon type='material-community' name={props.name} color={props.color} size={25}  />
                 </View>
             </TouchableOpacity>
             

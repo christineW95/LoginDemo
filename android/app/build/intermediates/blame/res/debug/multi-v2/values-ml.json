@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\codelab\\Bravo\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
+            "outputFile": "E:\\codelab\\Bravo\\LoginDemo\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ml\\values-ml.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\28c239edf41f12a3f46e99d58cbb0dcf\\res\\values-ml\\values-ml.xml",

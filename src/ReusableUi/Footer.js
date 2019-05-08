@@ -1,5 +1,6 @@
 import React from 'react';
 import {  View,StyleSheet,Image} from 'react-native';
+import { widthPercentageToDP, heightPercentageToDP } from 'react-native-responsive-screen';
 export default  Footer=props=>{
     return(
         <View style={styles.backgroundContainer}>
@@ -12,8 +13,8 @@ const styles=StyleSheet.create({
     flex: 1,
     position: 'absolute',
     bottom: 0,
-    width: '100%',
-    height: '25%',
+    width: widthPercentageToDP('90%'),
+    height: heightPercentageToDP('25%'),
 }, 
 bakcgroundImage: {
     flex: 1, 

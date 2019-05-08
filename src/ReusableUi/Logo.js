@@ -22,21 +22,23 @@ const styles=StyleSheet.create({
         flex:1,
         flexDirection:'row',
         alignItems: 'center',
+        justifyContent: 'flex-start',
 
     },
     txtContainer:{
-       flex:0.7,
+       flex:0.3,
+     
+       
     },
     logoContainer:{
        flex:0.3,
-    //    backgroundColor:'red',
-       alignItems:'flex-end'
+       alignItems:'flex-start'
       
     },
     logo:{
       fontWeight:'bold',fontSize:20,
       //alignItems:'flex-start',
-    //right:wp('5%')
+    right:wp('10%')
 
     },
     img:{

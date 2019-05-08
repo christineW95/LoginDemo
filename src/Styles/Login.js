@@ -51,7 +51,7 @@ export default StyleSheet.create({
       
      },
      socialIcon:{
-      // width:wp('5%'),height:hp('4%'),
+      width:wp('5%'),height:hp('4%'),
       backgroundColor:'#1558c3',borderRadius:20,justifyContent:'center',alignItems:'center'
      },
      form:{
