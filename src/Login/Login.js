@@ -16,15 +16,13 @@ export default class Login extends Component {
   render() {
     var checked=this.state.checked;
     return (
-      <ImageBackground source={require('../imgs/Header.png')} style={styles.HeaderContainer} imageStyle={{resizeMode:'cover',flex:1,position:'absolute'}}>
-            <ScrollView contentContainerStyle={{alignContent:'center',alignItems:'center'}}> 
-             <Grid style={{}}>
-              <Row style={{height:hp('13%')}}/>
-              
-              <Row style={[styles.row,{height:hp('25%')}]}>
+      <ImageBackground source={require('../imgs/Header.png')} style={styles.HeaderContainer} imageStyle={{resizeMode:'cover',flex:1}}>
+               <ScrollView contentContainerStyle={{alignContent:'center',alignItems:'center'}}> 
+               <Grid style={{}}>
+               <Row style={[styles.row,{height:hp('20%')}]}>
                   <Logo name='LOGO' path='logo-copy.png'/>
               </Row> 
-              <Row style={[styles.row,{height:hp('35%')}]}>
+              <Row style={[styles.row,{height:hp('30%')}]}>
                     <View style={styles.form}>
                         <View style={styles.header}>
                           <Text style={{fontWeight:'bold',fontSize:23}}>Login</Text>
@@ -51,7 +49,7 @@ export default class Login extends Component {
                         </View>
                 {/* </View> */}
               </Row>
-              <Row style={styles.row}>
+              <Row style={[styles.row,{height:hp('10%')}]}>
                   <Divider style={{color:'#3e4a59'}}/>
                     <Text style={{flex:0.4,textAlign:'center',color:'#3e4a59'}}>Social Login</Text>
                   <Divider style={{color:'#3e4a59'}}/>
@@ -66,11 +64,16 @@ export default class Login extends Component {
                 <Button transparent info onPress={()=>alert('Sign up clicked!')}>
                        <Text style={{color:'black'}}>New user ?</Text><Text style={styles.linkTxtColor}> Sign up?</Text>
                 </Button>
-              </Row> 
-            
-              </Grid> 
-                <Footer/>
-              </ScrollView>    
+              </Row>
+               </Grid>   
+              <View style={styles.backgroundContainer}>
+                  <Image style={styles.bakcgroundImage} source={require('../imgs/buildings.png')}/>
+                </View>
+              </ScrollView> 
+             
+               
+             
+               
       </ImageBackground>
   
     );

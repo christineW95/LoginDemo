@@ -14,7 +14,7 @@ import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
 
 export default class CustomIcon extends Component {
     render() {
-        console.warn('type')
+        // console.warn('type')
 
         let iconSize = this.props.size ? this.props.size : 27;  //style={this.props.style}
         let color = this.props.color ? this.props.color : '#384850';

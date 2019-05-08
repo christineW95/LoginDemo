@@ -45,8 +45,10 @@ export default StyleSheet.create({
       color:'#6078ea'
      },
      row:{
-      height: hp('20%') , justifyContent:'center' ,
-       alignItems:'center',flexDirection:'row'
+      height: hp('10%') ,
+       justifyContent:'center' ,
+       alignItems:'center',
+       flexDirection:'row'
       //  ,width:wp('40%'), 
       
      },
@@ -55,7 +57,7 @@ export default StyleSheet.create({
       backgroundColor:'#1558c3',borderRadius:20,justifyContent:'center',alignItems:'center'
      },
      form:{
-      width:wp('70%') ,alignItems:'center',height:hp('40%'),borderRadius:5,backgroundColor:'#ffffff',shadowColor: "#000",shadowOffset: {width: 20,	height: 10},shadowOpacity: 0.2,shadowRadius:5,elevation: 20,
+      width:wp('70%') ,alignItems:'center',height:hp('30%'),borderRadius:5,backgroundColor:'#ffffff',shadowColor: "#000",shadowOffset: {width: 20,	height: 10},shadowOpacity: 0.2,shadowRadius:5,elevation: 20,
      },
      header:{
       alignContent:'flex-start',justifyContent:'flex-start',alignItems:'flex-start',alignSelf:'flex-start',left: 15,top:10 
@@ -68,7 +70,6 @@ export default StyleSheet.create({
     flex: 1,
     // position: 'absolute',
     // top: 0,
-    width: '100%',
     // height: '100%',
 }, 
 HeaderImage: {
@@ -79,5 +80,20 @@ HeaderImage: {
     // height: null,
     // justifyContent: 'flex-end',
     // resizeMode:'stretch'
-}
+},
+backgroundContainer: {
+  flex: 1,
+  position: 'absolute',
+  bottom: 0,
+  backgroundColor:'red',
+  width: wp('100%'),
+  height: hp('25%')
+}, 
+bakcgroundImage: {
+  flex: 1, 
+  width: null, 
+  height: null,
+  resizeMode:'contain',
+  zIndex:-1
+},
 })

@@ -13,7 +13,7 @@ const styles=StyleSheet.create({
     flex: 1,
     position: 'absolute',
     bottom: 0,
-    width: widthPercentageToDP('90%'),
+    width: widthPercentageToDP('95%'),
     height: heightPercentageToDP('25%'),
 }, 
 bakcgroundImage: {
