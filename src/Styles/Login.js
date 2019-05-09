@@ -83,11 +83,12 @@ HeaderImage: {
 },
 backgroundContainer: {
   flex: 1,
-  position: 'absolute',
+//  justifyContent:'flex-end',
+ position: 'absolute',
   bottom: 0,
-  backgroundColor:'red',
-  width: wp('100%'),
-  height: hp('25%')
+  // backgroundColor:'red',
+  width:'100%',
+  height:'25%'
 }, 
 bakcgroundImage: {
   flex: 1, 

@@ -21,7 +21,8 @@ const styles=StyleSheet.create({
     container:{
         flex:1,
         flexDirection:'row',
-        alignItems: 'center',
+        // alignItems: 'center',
+        alignItems: 'flex-end',
         justifyContent: 'flex-start',
 
     },
@@ -32,13 +33,13 @@ const styles=StyleSheet.create({
     },
     logoContainer:{
        flex:0.3,
-       alignItems:'flex-start'
+       alignItems:'center'
       
     },
     logo:{
       fontWeight:'bold',fontSize:20,
       //alignItems:'flex-start',
-    right:wp('10%')
+    right:wp('10%'),bottom:10
 
     },
     img:{
