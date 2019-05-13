@@ -11,6 +11,7 @@ import EntypoIcon from 'react-native-vector-icons/Entypo';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 import FAIcon5 from 'react-native-vector-icons/FontAwesome5';
 import SimpleLineIcon from 'react-native-vector-icons/SimpleLineIcons';
+import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 
 export default class CustomIcon extends Component {
     render() {
@@ -20,7 +21,8 @@ export default class CustomIcon extends Component {
         let color = this.props.color ? this.props.color : '#384850';
         let Icon = this._getIconType(this.props.type);
         return (
-            <Icon {...this.props} style={[{ padding: 1 }, this.props.style]} size={iconSize} color={color} />
+               <Icon {...this.props} style={[this.props.style]} size={iconSize} color={color} />
+            
         );
     }
     _getIconType(type) {

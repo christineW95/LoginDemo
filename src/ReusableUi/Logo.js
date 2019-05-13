@@ -7,10 +7,10 @@ import {widthPercentageToDP as wp, heightPercentageToDP as hp,} from "react-nati
 export default  Logo=props=>{
     return(
         <View style={styles.container}>
-                    <View style={styles.logoContainer}>
-                        <Image source={require('../imgs/logo-copy.png')} style={styles.img} />
+                    <View>
+                        <Image source={require('../imgs/logo-copy.png')} />
                     </View>
-                    <View style={styles.txtContainter}>
+                    <View style={styles.logoContainer}>
                         <Text style={styles.logo}>{props.name}</Text>
                     </View>
         </View>
@@ -21,31 +21,11 @@ const styles=StyleSheet.create({
     container:{
         flex:1,
         flexDirection:'row',
-        // alignItems: 'center',
-        alignItems: 'flex-end',
-        justifyContent: 'flex-start',
-
-    },
-    txtContainer:{
-       flex:0.3,
-     
-       
-    },
-    logoContainer:{
-       flex:0.3,
-       alignItems:'center'
-      
     },
     logo:{
       fontWeight:'bold',fontSize:20,
-      //alignItems:'flex-start',
-    right:wp('10%'),bottom:10
-
     },
-    img:{
-   
-    },
-    
-    
-
+    logoContainer:{
+        marginTop:hp('1.5%'),marginLeft:wp('1%')
+    }
 })

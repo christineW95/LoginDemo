@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
     Container: {
         backgroundColor: '#A2A2A2',
         height: 2,
-        width: wp('5%'),
-        flex: 0.3,
+        // width: '10%',
+        flex: 0.2,
         justifyContent: 'space-between'
     }
 })

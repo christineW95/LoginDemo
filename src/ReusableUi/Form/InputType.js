@@ -6,17 +6,22 @@ import {  Item, Input,  Label } from 'native-base';
 import CustomIcon from '../../CustomIcon';
 export default  InputType=props=>{
     return(
-        <View style={[props.style,{alignItems:'flex-end'}]}>
+        <View style={[props.style,{alignItems:'flex-end',flexDirection:'row'}]}>
             <Item floatingLabel style={styles.itemStyles}>
              <Label>{props.label}</Label>
              <Input  />
             </Item> 
-            <CustomIcon type='material-community' name={props.icon_name} color={props.icon_color} size={24}  />
+            <CustomIcon type='material-community' style={{marginRight: wp('2%'),}}  name={props.icon_name} color={props.icon_color} size={24}  />
         </View>
     )
 }
 const styles=StyleSheet.create({
     itemStyles:{
-        width:wp('60%'),top:hp('4%')
+        //backgroundColor:'red',
+        flex:0.6,
+        marginLeft: wp('3%'),
+        // marginRight: wp('3%'),
+        // width:'45%',
+        marginTop: hp('2%')
     }
 })
