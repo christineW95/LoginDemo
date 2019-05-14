@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import Login from './src/Login/Login';
 import EnhancedLogin from './src/Login/EnhancedLogin';
+import KeyboardAvoidingViewForm from './src/Login/KeyboardAvoidingView';
 
 export default class App extends Component {
   render() {

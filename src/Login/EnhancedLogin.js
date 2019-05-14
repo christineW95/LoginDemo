@@ -16,18 +16,18 @@ export default class EnhancedLogin extends Component {
      
         <ImageBackground source={require('../imgs/cube.png')} style={{ flex: 1, height: '30%' }} imageStyle={{ flex: 1, resizeMode: 'stretch' }}>
         <KeyboardAvoidingView  style={{flex:1 ,justifyContent: "flex-end"}} >
-        <SafeAreaView style={{flex:1}}>
-          <View style={{ alignItems: 'flex-end'}}>
-            <Image source={require('../imgs/circle.png')} style={{ resizeMode: 'contain', marginTop:hp('10%'), marginRight: wp('10%') }} />
-          </View>
+        
           <ScrollView style={{ flex: 1}} contentContainerStyle={{ minHeight: '100%' }}>
-            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <View style={{ alignItems: 'flex-end'}}>
+                <Image source={require('../imgs/circle.png')} style={{ resizeMode: 'contain', marginTop:hp('10%'), marginRight: wp('10%') }} />
+              </View>
+          <View style={{ flex: 1, flexDirection: 'row' }}>
               <View style={{ flex: 0.1 }} />
               <View style={{ flex: 0.8 }}>
                 <View>
                   <Logo name='LOGO' path='logo-copy.png' />
                 </View>
-                <View style={{flex:1, marginTop: hp('2%'), flex: 1, minHeight: '20%', minWidth: '90%',}}>
+                <View style={{flex:1, marginTop: hp('7%'), flex: 1, minHeight: '20%', minWidth: '90%',}}>
                  
                   <View style={{
                     borderRadius: 5,
@@ -40,7 +40,7 @@ export default class EnhancedLogin extends Component {
                     <View style={styles.header}>
                       <Text style={{ fontWeight: 'bold', fontSize: 25 }}>Login</Text>
                     </View>
-                    <InputType  label='Username' icon_name='checkbox-marked-circle' icon_color='#28d0dd' />
+                    <InputType  label='Username' style={{ marginTop: hp('2%'), marginHorizontal: wp('4%')}} icon_name='checkbox-marked-circle' icon_color='#28d0dd' />
                     <InputType label='Password' icon_name='chart-bubble' icon_color='#28d0dd' />
                     <Button transparent info style={styles.linkBtn}>
                       <Text style={styles.linkTxtColor}>Forgot Password ?</Text>
@@ -69,7 +69,7 @@ export default class EnhancedLogin extends Component {
 
 
 
-                <View style={{ flexDirection: 'row', flex: 1, justifyContent: 'center',backgroundColor:'green' }}>
+                <View style={{ flexDirection: 'row', flex: 1, justifyContent: 'center'}}>
                   <Divider style={{ color: '#3e4a59', marginTop: hp('1%'), }} />
                   <View style={{ flex: 0.2, flexWrap: 'nowrap' }}>
                     <Text style={{ textAlign: 'center', color: '#3e4a59', flexWrap: 'nowrap' }}>Social Login</Text>
@@ -77,7 +77,7 @@ export default class EnhancedLogin extends Component {
                   <Divider style={{ color: '#3e4a59', marginTop: hp('1%'), }} />
                 </View> 
 
-                <View style={{ flexDirection: 'row', flex: 0.4, justifyContent: 'space-around' ,backgroundColor:'red'}}>
+                <View style={{ flexDirection: 'row',  justifyContent: 'space-around' }}>
                   <SocialIcon name='facebook' url='https://www.facebook.com/' style={[styles.socialIcon, { marginLeft: wp('10%') }]} color='white' />
                   <SocialIcon name='google-glass' url='https://www.google.com/' style={[styles.socialIcon, { backgroundColor: '#ff4644' }]} color='white' />
                   <SocialIcon name='twitter' url='https://www.twitter.com/' style={[styles.socialIcon, { backgroundColor: '#008cf2' }]} color='white' />
@@ -90,15 +90,14 @@ export default class EnhancedLogin extends Component {
 
             </View>
 
-            <View style={{ minHeight: '25%', width: '95%', marginLeft: wp('2%') }}  >
-              <ImageBackground source={require('../imgs/buildings.png')} style={{ flex: 1 }} imageStyle={{ flex: 1, minHeight: '70%', resizeMode: 'contain' }}>
+            <View style={{ minHeight: '15%', width: '100%', marginLeft: wp('2%') }}  >
+              <ImageBackground source={require('../imgs/buildings.png')} style={{ flex: 1 }} imageStyle={{ flex: 1, resizeMode: 'contain' }}>
                 <Button transparent style={{ alignSelf: 'center', marginTop: hp('10%') }} onPress={() => alert('Sign up clicked!')}>
                   <Text style={{ color: 'black' }}>New user ?</Text><Text style={styles.linkTxtColor}> Sign up?</Text>
                 </Button>
               </ImageBackground>
             </View>
           </ScrollView>
-        </SafeAreaView>
         </KeyboardAvoidingView>
         </ImageBackground> 
         
@@ -156,7 +155,7 @@ const styles = StyleSheet.create({
 
   },
   socialIcon: {
-    width: wp('5%'), height: hp('4%'),
+    padding:wp('1%'),
     backgroundColor: '#1558c3', borderRadius: 20, justifyContent: 'center', alignItems: 'center'
   },
   form: {

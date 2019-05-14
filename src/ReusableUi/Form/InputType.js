@@ -11,24 +11,14 @@ export default  InputType=props=>{
                 <Label>{props.label}</Label>
                 <Input  />
                 </Item> 
-                <CustomIcon type='material-community' style={{}} name={props.icon_name} color={props.icon_color} size={24}  />
+                <View style={{alignSelf: 'flex-end', position:'absolute', right:5  }}>
+                <CustomIcon type='material-community' name={props.icon_name} color={props.icon_color} size={24}  />
+                </View>
         </View>
-       
-
-
-        // <View style={[props.style,{alignItems:'flex-end',flexDirection:'row'}]}>
-        //     <Item floatingLabel style={styles.itemStyles}>
-        //      <Label>{props.label}</Label>
-        //      <Input  />
-        //     </Item> 
-        //     <CustomIcon type='material-community' style={{marginRight: wp('2%'),}}  name={props.icon_name} color={props.icon_color} size={24}  />
-        // </View>
     )
 }
 const styles=StyleSheet.create({
     itemStyles:{
         flex:1,
-        marginLeft: wp('4%'),
-        marginTop: hp('2%')
     }
 })

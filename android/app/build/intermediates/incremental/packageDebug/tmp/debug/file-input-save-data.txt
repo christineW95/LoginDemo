@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 08 10:24:36 EET 2019
+#Tue May 14 14:06:43 EET 2019
 5.base=E\:\\codelab\\Bravo\\LoginDemo\\android\\app\\build\\intermediates\\assets\\debug
 42.base=E\:\\codelab\\Bravo\\LoginDemo\\android\\app\\build\\intermediates\\transforms\\stripDebugSymbol\\debug\\0
 22.path=lib/armeabi-v7a/libfb.so

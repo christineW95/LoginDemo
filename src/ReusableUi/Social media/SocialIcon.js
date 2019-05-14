@@ -14,8 +14,8 @@ export default  SocialIcon=props=>{
               }
             })
             .catch((err) => console.error('An error occurred', err))}}>
-                <View >
-                    <CustomIcon type='material-community' name={props.name} color={props.color} size={25}  />
+                <View  >
+                    <CustomIcon type='material-community' name={props.name} color={props.color} size={27}  />
                 </View>
             </TouchableOpacity>
             
