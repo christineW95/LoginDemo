@@ -17,7 +17,7 @@ export default class CustomIcon extends Component {
     render() {
         // console.warn('type')
 
-        let iconSize = this.props.size ? this.props.size : 27;  //style={this.props.style}
+        let iconSize = this.props.size ? this.props.size : 25; 
         let color = this.props.color ? this.props.color : '#384850';
         let Icon = this._getIconType(this.props.type);
         return (
