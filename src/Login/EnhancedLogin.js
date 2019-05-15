@@ -41,7 +41,7 @@ export default class EnhancedLogin extends Component {
                       <Text style={{ fontWeight: 'bold', fontSize: 25 }}>Login</Text>
                     </View>
                     <InputType  label='Username' style={{ marginTop: hp('2%'), marginHorizontal: wp('4%')}} icon_name='checkbox-marked-circle' icon_color='#28d0dd' />
-                    <InputType label='Password' icon_name='chart-bubble' icon_color='#28d0dd' />
+                    <InputType label='Password' style={{ marginTop: hp('2%'), marginHorizontal: wp('4%')}} icon_name='chart-bubble' icon_color='#28d0dd' />
                     <Button transparent info style={styles.linkBtn}>
                       <Text style={styles.linkTxtColor}>Forgot Password ?</Text>
                     </Button>
